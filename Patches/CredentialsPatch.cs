@@ -164,7 +164,7 @@ class VersionShowerStartPatch
         Logger.Info($"v{Main.PluginVersion}, {buildtype}:{ThisAssembly.Git.Branch}:({ThisAssembly.Git.Commit}), link [{ThisAssembly.Git.RepositoryUrl}], dirty: [{ThisAssembly.Git.IsDirty}]", "TOHE version");
 
         if (Main.IsAprilFools)
-            Main.credentialsText = $"<color=#00bfff>Town Of Host</color> v11.45.14";
+            Main.credentialsText = $"<color=#00bfff>tsoH fO nwoT</color> 41.54.11v";
 
         var credentials = Object.Instantiate(__instance.text);
         credentials.text = Main.credentialsText;

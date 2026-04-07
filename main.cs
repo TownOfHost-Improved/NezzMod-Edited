@@ -27,7 +27,7 @@ using UnityEngine;
 [assembly: AssemblyVersion(TOHE.Main.PluginVersion)]
 namespace TOHE;
 
-[BepInPlugin(PluginGuid, "TOHE", PluginVersion)]
+[BepInPlugin(PluginGuid, "NME", PluginVersion)]
 [BepInIncompatibility("jp.ykundesu.supernewroles")]
 [BepInIncompatibility("com.ten.betteramongus")]
 [BepInIncompatibility("com.ten.thebetterroles")]
@@ -43,8 +43,8 @@ public class Main : BasePlugin
     // == Program Config ==
     public const string OriginalForkId = "OriginalTOH";
 
-    public static readonly string ModName = "TOHE";
-    public static readonly string ForkId = "TOHE";
+    public static readonly string ModName = "Nezz Mod Edited";
+    public static readonly string ForkId = "Nezz Mod Edited";
     public static readonly string ModColor = "#ffc0cb";
     public static readonly bool AllowPublicRoom = true;
 
@@ -55,10 +55,10 @@ public class Main : BasePlugin
 
     public static ConfigEntry<string> DebugKeyInput { get; private set; }
 
-    public const string PluginGuid = "com.0xdrmoe.townofhostenhanced";
+    public const string PluginGuid = "com.nessmodedited";
     public const string PluginGuid4 = "90759289-1d0d-494b-b36c-839f93ae0df1"; // for matchmaking token
-    public const string PluginVersion = "2026.0213.300.00028"; // YEAR.MMDD.VERSION.CANARYDEV
-    public const string PluginDisplayVersion = "3.0.0 Alpha 28";
+    public const string PluginVersion = "2026.0407.011.00001"; // YEAR.MMDD.VERSION.CANARYDEV
+    public const string PluginDisplayVersion = "0.1.1 Alpha 1";
     public static readonly List<(int year, int month, int day, int revision)> SupportedVersionAU =
     [
         (2025, 11, 18, 0) // 2025.11.18 & 17.1
@@ -82,19 +82,19 @@ public class Main : BasePlugin
 
     public static bool hasAccess = true;
 
-    public static readonly bool ShowUpdateButton = true;
+    public static readonly bool ShowUpdateButton = false;
 
     public static readonly bool ShowGitHubButton = true;
-    public static readonly string GitHubInviteUrl = "https://github.com/EnhancedNetwork/TownofHost-Enhanced";
+    public static readonly string GitHubInviteUrl = "https://github.com/TownOfHost-Improved/NezzMod-Edited";
 
     public static readonly bool ShowDiscordButton = true;
-    public static readonly string DiscordInviteUrl = "https://discord.gg/ten";
+    public static readonly string DiscordInviteUrl = "https://discord.gg/UFSggpXPbT";
 
-    public static readonly bool ShowWebsiteButton = true;
-    public static readonly string WebsiteInviteUrl = "https://weareten.ca/";
+    public static readonly bool ShowWebsiteButton = false;
+    public static readonly string WebsiteInviteUrl = "";
 
-    public static readonly bool ShowDonationButton = true;
-    public static readonly string DonationInviteUrl = "https://weareten.ca/TOHE";
+    public static readonly bool ShowDonationButton = false;
+    public static readonly string DonationInviteUrl = "";
 
     public Harmony Harmony { get; } = new Harmony(PluginGuid);
     public static Version version = Version.Parse(PluginVersion);
@@ -542,7 +542,7 @@ public class Main : BasePlugin
         Instance = this;
 
         //Client Options
-        HideName = Config.Bind("Client Options", "Hide Game Code Name", "TOHE");
+        HideName = Config.Bind("Client Options", "Hide Game Code Name", "NEZZ");
         HideColor = Config.Bind("Client Options", "Hide Game Code Color", $"{ModColor}");
         DebugKeyInput = Config.Bind("Authentication", "Debug Key", "");
 

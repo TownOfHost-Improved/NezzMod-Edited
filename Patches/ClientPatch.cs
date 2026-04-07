@@ -88,31 +88,6 @@ internal class RunLoginPatch
         if (ClickCount >= 10) ModUpdater.forceUpdate = false;
 #endif
     }
-
-    public static void Postfix(ref bool canOnline)
-    {
-        isAllowedOnline = canOnline;
-
-        if (!EOSManager.Instance.loginFlowFinished) return;
-
-        var friendcode = EOSManager.Instance.friendCode;
-        Main.Instance.StartCoroutine(dbConnect.Init());
-        if (friendcode == null || friendcode == "")
-        {
-            EOSManager.Instance.attemptAuthAgain = true;
-            Logger.Info("friendcode not found", "EOSManager");
-            canOnline = false;
-        }
-        try
-        {
-            if (Main.canaryRelease || Main.fullRelease)
-                ModUpdater.ShowAvailableUpdate();
-        }
-        catch (System.Exception error)
-        {
-            Logger.Error(error.ToString(), "ModUpdater.ShowAvailableUpdate");
-        }
-    }
 }
 [HarmonyPatch(typeof(BanMenu), nameof(BanMenu.SetVisible))]
 internal class BanMenuSetVisiblePatch
