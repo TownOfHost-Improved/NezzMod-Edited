@@ -1,0 +1,51 @@
+using System;
+using System.Text.Json;
+
+namespace TOHE;
+
+public class FloatOptionItem(int id, string name, float defaultValue, TabGroup tab, bool isSingleValue, FloatValueRule rule, bool vanilla) : OptionItem(id, name, rule.GetNearestIndex(defaultValue), tab, isSingleValue, vanillaStr: vanilla)
+{
+    public FloatValueRule Rule = rule;
+
+    public static FloatOptionItem Create(int id, string name, FloatValueRule rule, float defaultValue, TabGroup tab, bool isSingleValue, bool vanillaText = false)
+    {
+        return new FloatOptionItem(id, name, defaultValue, tab, isSingleValue, rule, vanillaText);
+    }
+    public static FloatOptionItem Create(int id, Enum name, FloatValueRule rule, float defaultValue, TabGroup tab, bool isSingleValue, bool vanillaText = false)
+    {
+        return new FloatOptionItem(id, name.ToString(), defaultValue, tab, isSingleValue, rule, vanillaText);
+    }
+
+    // Getter
+    public override int GetInt() => (int)Rule.GetValueByIndex(CurrentValue);
+    public override float GetFloat() => Rule.GetValueByIndex(CurrentValue);
+    public override string GetString()
+    {
+        return ApplyFormat(((float)((int)(Rule.GetValueByIndex(CurrentValue) * 100) * 1.0) / 100).ToString());
+    }
+    public override int GetValue()
+        => Rule.RepeatIndex(base.GetValue());
+
+    // Setter
+    public override void SetValue(int value, bool doSync = true)
+    {
+        base.SetValue(Rule.RepeatIndex(value), doSync);
+    }
+    public override void SetValue(object afterValue, bool doSync = true)
+    {
+        float? value = null;
+        if (afterValue is float fVal)
+            value = fVal;
+        else if (afterValue is double dVal)
+            value = (float)dVal;
+
+        if (value != null)
+            base.SetValue(Rule.GetNearestIndex(value.Value), doSync);
+        else
+            base.SetValue(afterValue, doSync);
+    }
+    public override object ParseJson(JsonElement json)
+    {
+        return json.GetDouble();
+    }
+}
