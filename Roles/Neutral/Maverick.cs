@@ -1,11 +1,11 @@
 using AmongUs.GameOptions;
 using System.Text;
-using TOHE.Modules;
-using TOHE.Roles.Core;
+using NEZZ.Modules;
+using NEZZ.Roles.Core;
 using UnityEngine;
-using static TOHE.Options;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Maverick : RoleBase
 {

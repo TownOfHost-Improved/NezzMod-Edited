@@ -1,11 +1,11 @@
 using System.Text;
-using TOHE.Roles.Core;
-using TOHE.Roles.Neutral;
-using static TOHE.MeetingHudStartPatch;
-using static TOHE.Options;
-using static TOHE.Translator;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Neutral;
+using static NEZZ.MeetingHudStartPatch;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Crewmate;
+namespace NEZZ.Roles.Crewmate;
 
 internal class Forensic : RoleBase
 {

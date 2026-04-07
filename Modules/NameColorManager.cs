@@ -1,14 +1,14 @@
 using Hazel;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.AddOns.Impostor;
-using TOHE.Roles.Core;
-using TOHE.Roles.Coven;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Impostor;
-using TOHE.Roles.Neutral;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.AddOns.Impostor;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Coven;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Impostor;
+using NEZZ.Roles.Neutral;
 
-namespace TOHE;
+namespace NEZZ;
 
 public static class NameColorManager
 {

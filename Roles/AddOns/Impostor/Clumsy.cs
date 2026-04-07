@@ -1,6 +1,6 @@
-using static TOHE.Options;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.AddOns.Impostor;
+namespace NEZZ.Roles.AddOns.Impostor;
 
 public class Clumsy : IAddon
 {

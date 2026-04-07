@@ -1,12 +1,12 @@
 using AmongUs.GameOptions;
 using Hazel;
 using System;
-using TOHE.Modules;
+using NEZZ.Modules;
 using UnityEngine;
-using static TOHE.Modules.HazelExtensions;
-using static TOHE.Options;
+using static NEZZ.Modules.HazelExtensions;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 //EHR - https://github.com/Gurge44/EndlessHostRoles/blob/main/Roles/Impostor/Abyssbringer.cs
 internal class AbyssBringer : RoleBase

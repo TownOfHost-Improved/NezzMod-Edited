@@ -1,9 +1,9 @@
-using TOHE.Modules;
-using TOHE.Roles.Core;
+using NEZZ.Modules;
+using NEZZ.Roles.Core;
 using UnityEngine;
-using static TOHE.Options;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Butcher : RoleBase
 {

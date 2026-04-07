@@ -1,7 +1,7 @@
-using TOHE.Roles.Core;
-using static TOHE.Options;
+using NEZZ.Roles.Core;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.Crewmate;
+namespace NEZZ.Roles.Crewmate;
 
 internal class Bodyguard : RoleBase
 {

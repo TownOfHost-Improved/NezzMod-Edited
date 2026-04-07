@@ -1,10 +1,10 @@
 using Hazel;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
-using static TOHE.Options;
-using static TOHE.Utils;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
+using static NEZZ.Options;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Crewmate;
+namespace NEZZ.Roles.Crewmate;
 
 internal class Spy : RoleBase
 {

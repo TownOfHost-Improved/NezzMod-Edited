@@ -1,10 +1,10 @@
 using Hazel;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.Core;
-using static TOHE.Options;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.Core;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Executioner : RoleBase
 {
@@ -35,7 +35,7 @@ internal class Executioner : RoleBase
     [
         CustomRoles.Amnesiac,
         CustomRoles.Maverick,
-        CustomRoles.CrewmateTOHE,
+        CustomRoles.CrewmateNEZZ,
         CustomRoles.Celebrity,
         CustomRoles.Bodyguard,
         CustomRoles.Dictator,
@@ -45,7 +45,7 @@ internal class Executioner : RoleBase
         CustomRoles.Opportunist,
         CustomRoles.Pursuer,
         CustomRoles.Refugee,
-        CustomRoles.TrackerTOHE,
+        CustomRoles.TrackerNEZZ,
         CustomRoles.Sheriff,
         CustomRoles.Deputy,
         CustomRoles.Medic,

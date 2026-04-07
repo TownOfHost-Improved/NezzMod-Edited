@@ -1,6 +1,6 @@
-using TOHE.Roles.Core;
+using NEZZ.Roles.Core;
 
-namespace TOHE;
+namespace NEZZ;
 
 [HarmonyPatch(typeof(OneWayShadows), nameof(OneWayShadows.IsIgnored))]
 public static class OneWayShadowsIsIgnoredPatch

@@ -1,7 +1,7 @@
 using AmongUs.GameOptions;
-using static TOHE.Options;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class SerialKiller : RoleBase
 {

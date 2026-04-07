@@ -1,11 +1,11 @@
 using AmongUs.GameOptions;
-using TOHE.Roles.Core.AssignManager;
+using NEZZ.Roles.Core.AssignManager;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Roles.Core.CustomRoleManager;
-using static TOHE.Translator;
+using static NEZZ.Options;
+using static NEZZ.Roles.Core.CustomRoleManager;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Amnesiac : RoleBase
 {

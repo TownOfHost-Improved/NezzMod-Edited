@@ -1,11 +1,11 @@
-using TOHE.Modules;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Double;
+using NEZZ.Modules;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Double;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class CursedSoul : RoleBase
 {

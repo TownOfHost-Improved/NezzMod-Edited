@@ -2,14 +2,14 @@ using System;
 using System.IO;
 using System.Text;
 
-namespace TOHE.Modules;
+namespace NEZZ.Modules;
 
 public static class TagManager
 {
 #if ANDROID
-    private static readonly string TAGS_FILE_PATH = Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "Tags");
+    private static readonly string TAGS_FILE_PATH = Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "Tags");
 #else
-    private static readonly string TAGS_FILE_PATH = "./TOHE-DATA/Tags";
+    private static readonly string TAGS_FILE_PATH = "./NEZZ-DATA/Tags";
 #endif
 
     public static void Init()
@@ -22,15 +22,15 @@ public static class TagManager
         try
         {
 #if ANDROID
-            string dataDirectory = Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "Tags");
-            string templateFilePath = Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "Tags", "Tag_Template.txt");
+            string dataDirectory = Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "Tags");
+            string templateFilePath = Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "Tags", "Tag_Template.txt");
 #else
-            string dataDirectory = @"TOHE-DATA/Tags";
-            string templateFilePath = @"./TOHE-DATA/Tags/Tag_Template.txt";
+            string dataDirectory = @"NEZZ-DATA/Tags";
+            string templateFilePath = @"./NEZZ-DATA/Tags/Tag_Template.txt";
 #endif
 
             if (!Directory.Exists(dataDirectory)) Directory.CreateDirectory(dataDirectory);
-            var defaultTagMsg = GetResourcesTxt($"TOHE.Resources.Config.TagTemplate.txt");
+            var defaultTagMsg = GetResourcesTxt($"NEZZ.Resources.Config.TagTemplate.txt");
             if (!File.Exists(templateFilePath)) // Default tag
             {
                 using FileStream fs = File.Create(templateFilePath);

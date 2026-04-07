@@ -1,9 +1,9 @@
 using Hazel;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Core;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Core;
 
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class SchrodingersCat : RoleBase
 {
@@ -84,7 +84,7 @@ internal class SchrodingersCat : RoleBase
     {
         if (teammate.TryGetValue(seer.PlayerId, out var temmate) && target.PlayerId == temmate)
         {
-            if (target.IsPlayerCrewmateTeam()) return Main.roleColors[CustomRoles.CrewmateTOHE];
+            if (target.IsPlayerCrewmateTeam()) return Main.roleColors[CustomRoles.CrewmateNEZZ];
             else return Main.roleColors[target.GetCustomRole()];
         }
         return string.Empty;

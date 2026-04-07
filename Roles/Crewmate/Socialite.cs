@@ -1,10 +1,10 @@
 using Hazel;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
-namespace TOHE.Roles.Crewmate;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
+namespace NEZZ.Roles.Crewmate;
 
 internal class Socialite : RoleBase
 {

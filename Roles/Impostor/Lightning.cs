@@ -1,11 +1,11 @@
 using Hazel;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Neutral;
-using static TOHE.Options;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Neutral;
+using static NEZZ.Options;
 
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Lightning : RoleBase
 {

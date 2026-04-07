@@ -1,16 +1,16 @@
 using System;
 using AmongUs.GameOptions;
 using Hazel;
-using TOHE.Modules;
-using TOHE.Modules.ChatManager;
-using TOHE.Patches;
-using TOHE.Roles.Core;
+using NEZZ.Modules;
+using NEZZ.Modules.ChatManager;
+using NEZZ.Patches;
+using NEZZ.Roles.Core;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Coven;
+namespace NEZZ.Roles.Coven;
 
 internal class Summoner : CovenManager
 {

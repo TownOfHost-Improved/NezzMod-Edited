@@ -4,7 +4,7 @@ using UnityEngine;
 //Thanks EHR - https://github.com/Gurge44/EndlessHostRoles/blob/main/Modules/Extensions/HazelExtensions.cs
 
 
-namespace TOHE.Modules
+namespace NEZZ.Modules
 {
     public static class HazelExtensions
     {

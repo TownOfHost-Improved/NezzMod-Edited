@@ -1,17 +1,17 @@
-using TOHE.Roles.Neutral;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Core;
+using NEZZ.Roles.Neutral;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Core;
 
-using static TOHE.Translator;
+using static NEZZ.Translator;
 using Hazel;
 using UnityEngine;
 using System;
-using TOHE.Roles.Coven;
-using TOHE.Roles.Crewmate;
+using NEZZ.Roles.Coven;
+using NEZZ.Roles.Crewmate;
 using System.Text;
-using TOHE.Roles.AddOns.Common;
+using NEZZ.Roles.AddOns.Common;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Inquisitor : RoleBase
 {

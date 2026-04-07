@@ -1,17 +1,17 @@
 using Hazel;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.AddOns;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Double;
-using TOHE.Roles.Impostor;
-using TOHE.Roles.Neutral;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.AddOns;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Double;
+using NEZZ.Roles.Impostor;
+using NEZZ.Roles.Neutral;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Coven;
+namespace NEZZ.Roles.Coven;
 
 internal class MoonDancer : CovenManager
 {

@@ -4,17 +4,17 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE;
+namespace NEZZ;
 
 public static class BanManager
 {
-    private static readonly string DenyNameListPath = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "DenyName.txt") : "./TOHE-DATA/DenyName.txt";
-    private static readonly string BanListPath = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "BanList.txt") : "./TOHE-DATA/BanList.txt";
-    private static readonly string ModeratorListPath = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "Moderators.txt") : "./TOHE-DATA/Moderators.txt";
-    private static readonly string VIPListPath = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "VIP-List.txt") : "./TOHE-DATA/VIP-List.txt";
-    private static readonly string WhiteListListPath = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "WhiteList.txt") : "./TOHE-DATA/WhiteList.txt";
+    private static readonly string DenyNameListPath = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "DenyName.txt") : "./NEZZ-DATA/DenyName.txt";
+    private static readonly string BanListPath = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "BanList.txt") : "./NEZZ-DATA/BanList.txt";
+    private static readonly string ModeratorListPath = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "Moderators.txt") : "./NEZZ-DATA/Moderators.txt";
+    private static readonly string VIPListPath = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "VIP-List.txt") : "./NEZZ-DATA/VIP-List.txt";
+    private static readonly string WhiteListListPath = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "WhiteList.txt") : "./NEZZ-DATA/WhiteList.txt";
     //private static List<string> EACList = []; // Don't make it read-only
     public static List<string> TempBanWhiteList = []; //To prevent writing to ban list
     public static List<Dictionary<string, System.Text.Json.JsonElement>> EACDict = [];
@@ -23,9 +23,9 @@ public static class BanManager
         try
         {
             if (OperatingSystem.IsAndroid())
-                Directory.CreateDirectory(Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA"));
+                Directory.CreateDirectory(Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA"));
             else
-                Directory.CreateDirectory("TOHE-DATA");
+                Directory.CreateDirectory("NEZZ-DATA");
 
             if (!File.Exists(BanListPath))
             {
@@ -36,7 +36,7 @@ public static class BanManager
             {
                 Logger.Warn("Create a new DenyName.txt file", "BanManager");
                 File.Create(DenyNameListPath).Close();
-                File.WriteAllText(DenyNameListPath, GetResourcesTxt("TOHE.Resources.Config.DenyName.txt"));
+                File.WriteAllText(DenyNameListPath, GetResourcesTxt("NEZZ.Resources.Config.DenyName.txt"));
             }
             if (!File.Exists(ModeratorListPath))
             {
@@ -55,7 +55,7 @@ public static class BanManager
             }
 
             // Read EAC List
-            //var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("TOHE.Resources.Config.EACList.txt");
+            //var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("NEZZ.Resources.Config.EACList.txt");
             //stream.Position = 0;
             //using StreamReader sr = new(stream, Encoding.UTF8);
             //string line;
@@ -119,9 +119,9 @@ public static class BanManager
         try
         {
             if (OperatingSystem.IsAndroid())
-                Directory.CreateDirectory(Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA"));
+                Directory.CreateDirectory(Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA"));
             else
-                Directory.CreateDirectory("TOHE-DATA");
+                Directory.CreateDirectory("NEZZ-DATA");
             
             if (!File.Exists(DenyNameListPath)) File.Create(DenyNameListPath).Close();
             using StreamReader sr = new(DenyNameListPath);
@@ -192,9 +192,9 @@ public static class BanManager
         try
         {
             if (OperatingSystem.IsAndroid())
-                Directory.CreateDirectory(Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA"));
+                Directory.CreateDirectory(Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA"));
             else
-                Directory.CreateDirectory("TOHE-DATA");
+                Directory.CreateDirectory("NEZZ-DATA");
             
             if (!File.Exists(BanListPath)) File.Create(BanListPath).Close();
             using StreamReader sr = new(BanListPath);

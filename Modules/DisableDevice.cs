@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
-using static TOHE.Utils;
+using static NEZZ.Utils;
 
-namespace TOHE;
+namespace NEZZ;
 
 //ÕÅé×ÇâÕàâ : https://github.com/ykundesu/SuperNewRoles/blob/master/SuperNewRoles/Mode/SuperHostRoles/BlockTool.cs
 class DisableDevice

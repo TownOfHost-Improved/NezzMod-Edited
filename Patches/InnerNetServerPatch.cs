@@ -1,9 +1,9 @@
 using System;
 using Hazel;
 using InnerNet;
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE;
+namespace NEZZ;
 
 [HarmonyPatch(typeof(InnerNetServer), nameof(InnerNetServer.HandleMessage))]
 class ServerHandleMessagePatch

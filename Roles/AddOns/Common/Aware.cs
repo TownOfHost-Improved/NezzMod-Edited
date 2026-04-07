@@ -1,9 +1,9 @@
-using TOHE.Roles.Coven;
-using TOHE.Roles.Neutral;
-using static TOHE.Options;
-using static TOHE.Translator;
+using NEZZ.Roles.Coven;
+using NEZZ.Roles.Neutral;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.AddOns.Common;
+namespace NEZZ.Roles.AddOns.Common;
 
 public class Aware : IAddon
 {

@@ -1,10 +1,10 @@
 #Number:100031
 #Title:TownOfHostEdited v2.2.7
 #SubTitle:★★★★Try Full English Support★★★★
-#ShortTitle:★TOHE v2.2.7
+#ShortTitle:★NEZZ v2.2.7
 #Date:2023-4-11T00:00:00Z
 #-----------------------------
-Thank you for using TOHE!
+Thank you for using NEZZ!
 
 
 ## Base

@@ -1,15 +1,15 @@
 using AmongUs.GameOptions;
 using Hazel;
 using System;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
-using TOHE.Patches;
-using TOHE.Roles.Core;
-using static TOHE.MeetingHudStartPatch;
-using static TOHE.Options;
-using static TOHE.Translator;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
+using NEZZ.Patches;
+using NEZZ.Roles.Core;
+using static NEZZ.MeetingHudStartPatch;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Quizmaster : RoleBase
 {
@@ -246,8 +246,8 @@ internal class Quizmaster : RoleBase
                 new SetAnswersQuestion { Stage = 4, Question = "QuizmasterCooldown", Answer = "15", PossibleAnswers = { "15", "30", "0", "999", AURoleOptions.KillCooldown.ToString() }, QuizmasterQuestionType = QuizmasterQuestionType.QuizmasterCooldownQuestion }, // this is a level 4 because the only way to know this would be to look at the code for Quizmaster
                 new SetAnswersQuestion { Stage = 4, Question = "WhoCoded", Answer = "Multiple People", PossibleAnswers = { "Furo", "Drakos", "Moe", "Marg", "Multiple People", "TommyXL", "Niko", "Pyro", "KARPED1EM", "Ryuk" }, QuizmasterQuestionType = QuizmasterQuestionType.WhoCoded },
 
-                new SetAnswersQuestion { Stage = 5, Question = "TOHEPartners", Answer = "Modded Among Us Lobbies", PossibleAnswers = { "Innersloth", "Modded Among Us Lobbies", "Purple Among Us", "Modded Among Us Lobbies & Purple Among Us", "Steam", "Twitter", "Town Of Us: Reactivated", "Moe Corporation", "Digital Bandidos" }, QuizmasterQuestionType = QuizmasterQuestionType.TOHEPartners },
-                new SetAnswersQuestion { Stage = 5, Question = "TOHEEventCoordinator", Answer = "Sarha", PossibleAnswers = { "Moe", "Sarha", "Lauryn", "Jackler", "Matt", "Tasha", "Pyro", "Fish" }, QuizmasterQuestionType = QuizmasterQuestionType.TOHEEventCoordinator },
+                new SetAnswersQuestion { Stage = 5, Question = "NEZZPartners", Answer = "Modded Among Us Lobbies", PossibleAnswers = { "Innersloth", "Modded Among Us Lobbies", "Purple Among Us", "Modded Among Us Lobbies & Purple Among Us", "Steam", "Twitter", "Town Of Us: Reactivated", "Moe Corporation", "Digital Bandidos" }, QuizmasterQuestionType = QuizmasterQuestionType.NEZZPartners },
+                new SetAnswersQuestion { Stage = 5, Question = "NEZZEventCoordinator", Answer = "Sarha", PossibleAnswers = { "Moe", "Sarha", "Lauryn", "Jackler", "Matt", "Tasha", "Pyro", "Fish" }, QuizmasterQuestionType = QuizmasterQuestionType.NEZZEventCoordinator },
                 new SetAnswersQuestion { Stage = 5, Question = "HowManyCats", Answer = "3", PossibleAnswers = { "0", "1", "2", "3", "4", "5", "6" }, QuizmasterQuestionType = QuizmasterQuestionType.HowManyCats }, // Copycat, Schrodinger's Cat, OIIAI (I want to count Jinx because of its origin in TOS2, but I won't)
                 new SetAnswersQuestion { Stage = 5, Question = "GuessingCommand", Answer = "Bet", PossibleAnswers = { "Nothing, it's just /bt", "Bet", "Bloodthirst", "Betray Them", "Bomb Tag", "Bad Thing" }, QuizmasterQuestionType = QuizmasterQuestionType.GuessingCommand },
                 new SetAnswersQuestion { Stage = 5, Question = "NotFromTOS2", Answer = "Moon Dancer", PossibleAnswers = { "Coven Leader", "Jinx", "Marshall", "Doomsayer", "Baker", "Moon Dancer", "Pirate", "Mayor", "Veteran", "Psychic" }, QuizmasterQuestionType = QuizmasterQuestionType.NotFromTOS2 },
@@ -778,8 +778,8 @@ public enum QuizmasterQuestionType
     QuizmasterCooldownQuestion,
     WhoCoded,
     WhoOwns,
-    TOHEPartners,
-    TOHEEventCoordinator,
+    NEZZPartners,
+    NEZZEventCoordinator,
     HowManyCats,
     GuessingCommand,
     NotFromTOS2,

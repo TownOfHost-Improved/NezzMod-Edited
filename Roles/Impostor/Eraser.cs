@@ -1,10 +1,10 @@
 using AmongUs.GameOptions;
-using TOHE.Modules;
-using TOHE.Roles.Core;
-using TOHE.Roles.Crewmate;
-using static TOHE.Translator;
+using NEZZ.Modules;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Crewmate;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Eraser : RoleBase
 {
@@ -141,15 +141,15 @@ internal class Eraser : RoleBase
             ? role
             : roleType switch
             {
-                RoleTypes.Crewmate => CustomRoles.CrewmateTOHE,
-                RoleTypes.Scientist => CustomRoles.ScientistTOHE,
-                RoleTypes.Tracker => CustomRoles.TrackerTOHE,
-                RoleTypes.Noisemaker => CustomRoles.NoisemakerTOHE,
-                RoleTypes.Engineer => CustomRoles.EngineerTOHE,
-                RoleTypes.Impostor when role.IsCrewmate() => CustomRoles.CrewmateTOHE,
-                RoleTypes.Impostor => CustomRoles.ImpostorTOHE,
-                RoleTypes.Shapeshifter => CustomRoles.ShapeshifterTOHE,
-                RoleTypes.Phantom => CustomRoles.PhantomTOHE,
+                RoleTypes.Crewmate => CustomRoles.CrewmateNEZZ,
+                RoleTypes.Scientist => CustomRoles.ScientistNEZZ,
+                RoleTypes.Tracker => CustomRoles.TrackerNEZZ,
+                RoleTypes.Noisemaker => CustomRoles.NoisemakerNEZZ,
+                RoleTypes.Engineer => CustomRoles.EngineerNEZZ,
+                RoleTypes.Impostor when role.IsCrewmate() => CustomRoles.CrewmateNEZZ,
+                RoleTypes.Impostor => CustomRoles.ImpostorNEZZ,
+                RoleTypes.Shapeshifter => CustomRoles.ShapeshifterNEZZ,
+                RoleTypes.Phantom => CustomRoles.PhantomNEZZ,
                 _ => role,
             };
     }

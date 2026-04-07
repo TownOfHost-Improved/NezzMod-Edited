@@ -1,7 +1,7 @@
-using TOHE.Roles.AddOns.Common;
-using static TOHE.Options;
+using NEZZ.Roles.AddOns.Common;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.AddOns.Impostor;
+namespace NEZZ.Roles.AddOns.Impostor;
 
 public class Stealer : IAddon
 {

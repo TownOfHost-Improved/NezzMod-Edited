@@ -1,9 +1,9 @@
-using TOHE.Modules;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using NEZZ.Modules;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.AddOns.Common;
+namespace NEZZ.Roles.AddOns.Common;
 
 public class Rebirth : IAddon
 {

@@ -1,9 +1,9 @@
 
-<h1 align="center">Town of Host: Enhanced (TOHE)</h1>
+<h1 align="center">Town of Host: Enhanced (NEZZ)</h1>
 
 <br>
 
-<img align="left" alt="Cover" src="Resources/Background/TOHE-Background-Old.jpg" width="50%" height="300" /> 
+<img align="left" alt="Cover" src="Resources/Background/NEZZ-Background-Old.jpg" width="50%" height="300" /> 
 
 <p align="right">
   
@@ -34,7 +34,7 @@
 > 
 > - Town of Host: Enhanced was forked from Town of Host: Re-Edited.
 >
-### :star: [TOHE](https://github.com/KARPED1EM/TownOfHostEdited) :
+### :star: [NEZZ](https://github.com/KARPED1EM/TownOfHostEdited) :
 > 
 > - Town of Host: Re-Edited was forked from Town of Host: Edited. (TONX)
 > 
@@ -80,7 +80,7 @@
 >
 > - Ideas for some roles (Alchemist, Crusader, Chameleon.. more)
 > 
-### :star: [EHR (Formerly TOHE+)](https://github.com/Gurge44/EndlessHostRoles)
+### :star: [EHR (Formerly NEZZ+)](https://github.com/Gurge44/EndlessHostRoles)
 >
 > - Provided roles: Pyromaniac, Necromancer, Head Hunter (Huntsman), Alchemist, and others
 > - Game Mode: FFA
@@ -89,7 +89,7 @@
 > - Improved Role Spawns
 > - Improve text box (TextBoxPatch.cs)
 > - Some ideas to improve performance
-### :star: [TONEX (Formerly TOHEX)](https://github.com/XtremeWave/TownOfNewEpic_Xtreme)
+### :star: [TONEX (Formerly NEZZX)](https://github.com/XtremeWave/TownOfNewEpic_Xtreme)
 >
 > - Provided roles: Swapper, Berserker, Randomizer and Blackmailer
 > - Improve chat spam system (ChatManager.cs)
@@ -131,7 +131,7 @@ To obtain an API token for this project, you must join our Discord server and op
    https://discord.gg/ten
 
 2. **Open a Ticket:**
-   Once you've joined the server, open a ticket and request an API token for TOHE API. Provide any necessary information as instructed in the ticket system.
+   Once you've joined the server, open a ticket and request an API token for NEZZ API. Provide any necessary information as instructed in the ticket system.
 
 3. **Token Usage:**
    Upon receiving the API token, follow the instructions in the documentation to configure and use the token with the project.

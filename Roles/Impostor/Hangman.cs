@@ -1,11 +1,11 @@
 using AmongUs.GameOptions;
-using TOHE.Roles.AddOns.Impostor;
-using TOHE.Roles.Core;
-using TOHE.Roles.Double;
+using NEZZ.Roles.AddOns.Impostor;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Double;
 using UnityEngine;
-using static TOHE.Options;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Hangman : RoleBase
 {

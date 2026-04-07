@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-namespace TOHE.Modules;
+namespace NEZZ.Modules;
 
 public static class AFKDetector
 {

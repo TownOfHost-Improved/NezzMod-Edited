@@ -1,17 +1,17 @@
 using Hazel;
 using System;
 using System.Text.RegularExpressions;
-using TOHE.Modules;
-using TOHE.Modules.ChatManager;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Core;
-using TOHE.Roles.Coven;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Double;
+using NEZZ.Modules;
+using NEZZ.Modules.ChatManager;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Coven;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Double;
 using UnityEngine;
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Councillor : RoleBase
 {

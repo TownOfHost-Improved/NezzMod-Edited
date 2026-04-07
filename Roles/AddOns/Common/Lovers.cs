@@ -1,9 +1,9 @@
 using Hazel;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Neutral;
-using static TOHE.Options;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Neutral;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.AddOns.Common;
+namespace NEZZ.Roles.AddOns.Common;
 
 public class Lovers : IAddon
 {

@@ -1,7 +1,7 @@
-using TOHE.Modules;
-using static TOHE.Options;
+using NEZZ.Modules;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Instigator : RoleBase
 {

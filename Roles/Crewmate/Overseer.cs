@@ -1,15 +1,15 @@
 using AmongUs.GameOptions;
 using Hazel;
 using InnerNet;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.Neutral;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.Neutral;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Crewmate;
+namespace NEZZ.Roles.Crewmate;
 
 internal class Overseer : RoleBase
 {

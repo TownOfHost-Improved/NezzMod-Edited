@@ -1,13 +1,13 @@
 using Hazel;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Core;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
-using TOHE.Modules.ChatManager;
-using TOHE.Patches;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Core;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
+using NEZZ.Modules.ChatManager;
+using NEZZ.Patches;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Starspawn : PariahManager
 {

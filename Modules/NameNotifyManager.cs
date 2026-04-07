@@ -1,8 +1,8 @@
 using Hazel;
-using TOHE.Modules.Rpc;
+using NEZZ.Modules.Rpc;
 using UnityEngine;
 
-namespace TOHE;
+namespace NEZZ;
 
 public static class NameNotifyManager
 {

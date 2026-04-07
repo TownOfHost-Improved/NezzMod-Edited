@@ -1,11 +1,11 @@
 using AmongUs.GameOptions;
-using TOHE.Modules;
+using NEZZ.Modules;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Disperser : RoleBase
 {

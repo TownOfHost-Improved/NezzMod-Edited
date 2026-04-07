@@ -1,14 +1,14 @@
 using Hazel;
 using System.Text;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Core;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Core;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 internal class Pixie : RoleBase
 {
     //===========================SETUP================================\\

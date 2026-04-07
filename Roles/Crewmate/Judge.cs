@@ -1,18 +1,18 @@
 using Hazel;
 using System;
 using System.Text.RegularExpressions;
-using TOHE.Modules;
-using TOHE.Modules.ChatManager;
-using TOHE.Modules.Rpc;
-using TOHE.Patches;
-using TOHE.Roles.Coven;
-using TOHE.Roles.Double;
-using TOHE.Roles.Impostor;
+using NEZZ.Modules;
+using NEZZ.Modules.ChatManager;
+using NEZZ.Modules.Rpc;
+using NEZZ.Patches;
+using NEZZ.Roles.Coven;
+using NEZZ.Roles.Double;
+using NEZZ.Roles.Impostor;
 using UnityEngine;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Crewmate;
+namespace NEZZ.Roles.Crewmate;
 
 internal class Judge : RoleBase
 {

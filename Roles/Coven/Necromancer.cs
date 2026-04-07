@@ -1,12 +1,12 @@
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.Core;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Neutral;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Neutral;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Coven;
+namespace NEZZ.Roles.Coven;
 
 internal class Necromancer : CovenManager
 {

@@ -1,8 +1,8 @@
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using UnityEngine;
-using static TOHE.Options;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.AddOns.Crewmate;
+namespace NEZZ.Roles.AddOns.Crewmate;
 
 public class Workhorse : IAddon
 {

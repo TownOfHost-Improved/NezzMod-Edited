@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Bard : RoleBase
 {

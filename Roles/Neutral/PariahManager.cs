@@ -1,9 +1,9 @@
 using AmongUs.GameOptions;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE;
+namespace NEZZ;
 
 public abstract class PariahManager : RoleBase // NO, THIS IS NOT A ROLE
 {

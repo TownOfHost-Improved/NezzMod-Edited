@@ -1,15 +1,15 @@
 using AmongUs.GameOptions;
 using System;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.AddOns.Impostor;
-using TOHE.Roles.Core;
-using TOHE.Roles.Impostor;
-using TOHE.Roles.Neutral;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.AddOns.Impostor;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Impostor;
+using NEZZ.Roles.Neutral;
 using UnityEngine;
-using static TOHE.Utils;
+using static NEZZ.Utils;
 
-namespace TOHE;
+namespace NEZZ;
 
 public class PlayerState(byte playerId)
 {
@@ -514,7 +514,7 @@ public class PlayerState(byte playerId)
         Fall,
         Exorcised,
 
-        // TOHE
+        // NEZZ
         Gambled,
         Eaten,
         Sacrifice,

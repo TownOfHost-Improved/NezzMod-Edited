@@ -1,9 +1,9 @@
 using Hazel;
-using TOHE.Modules.Rpc;
-using TOHE.Patches;
-using static TOHE.Translator;
+using NEZZ.Modules.Rpc;
+using NEZZ.Patches;
+using static NEZZ.Translator;
 
-namespace TOHE.Modules;
+namespace NEZZ.Modules;
 
 public static class CriticalErrorManager
 {

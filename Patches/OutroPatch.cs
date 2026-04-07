@@ -1,18 +1,18 @@
 using System;
 using System.Text;
 using TMPro;
-using TOHE.Modules;
-using TOHE.Modules.ChatManager;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Core;
-using TOHE.Roles.Core.AssignManager;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Impostor;
-using TOHE.Roles.Neutral;
+using NEZZ.Modules;
+using NEZZ.Modules.ChatManager;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Core.AssignManager;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Impostor;
+using NEZZ.Roles.Neutral;
 using UnityEngine;
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE;
+namespace NEZZ;
 
 [HarmonyPatch(typeof(AmongUsClient), nameof(AmongUsClient.OnGameEnd))]
 class EndGamePatch

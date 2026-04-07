@@ -1,13 +1,13 @@
 using System;
-using TOHE.Modules;
-using TOHE.Roles.Core;
-using TOHE.Roles.Coven;
-using TOHE.Roles.Neutral;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using NEZZ.Modules;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Coven;
+using NEZZ.Roles.Neutral;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Crewmate;
+namespace NEZZ.Roles.Crewmate;
 
 internal class FortuneTeller : RoleBase
 {

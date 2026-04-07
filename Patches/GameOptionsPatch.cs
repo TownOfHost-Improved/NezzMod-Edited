@@ -1,4 +1,4 @@
-namespace TOHE;
+namespace NEZZ;
 
 [HarmonyPatch(typeof(RoleOptionSetting), nameof(RoleOptionSetting.UpdateValuesAndText))]
 class ChanceChangePatch

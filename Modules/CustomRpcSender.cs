@@ -4,13 +4,13 @@ using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using InnerNet;
 using System;
 using System.Text;
-using TOHE.Roles.Core;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Neutral;
-using TOHE.Modules;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Neutral;
+using NEZZ.Modules;
 using UnityEngine;
 
-namespace TOHE;
+namespace NEZZ;
 
 public class CustomRpcSender
 {

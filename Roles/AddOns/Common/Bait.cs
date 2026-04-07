@@ -1,9 +1,9 @@
 using System;
-using TOHE.Modules;
-using static TOHE.Options;
-using static TOHE.Translator;
+using NEZZ.Modules;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.AddOns.Common;
+namespace NEZZ.Roles.AddOns.Common;
 
 public class Bait : IAddon
 {

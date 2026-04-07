@@ -2,9 +2,9 @@ using AmongUs.GameOptions;
 using Hazel;
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using Il2CppSystem;
-using TOHE.Modules.Rpc;
+using NEZZ.Modules.Rpc;
 
-namespace TOHE.Modules;
+namespace NEZZ.Modules;
 
 public abstract class GameOptionsSender
 {

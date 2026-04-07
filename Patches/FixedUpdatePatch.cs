@@ -1,12 +1,12 @@
 using System;
 using InnerNet;
 using TMPro;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.Core;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.Core;
 using UnityEngine;
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE.Patches;
+namespace NEZZ.Patches;
 
 // Credit: EHR
 [HarmonyPatch(typeof(InnerNetClient), nameof(InnerNetClient.FixedUpdate))]

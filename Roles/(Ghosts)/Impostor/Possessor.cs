@@ -1,10 +1,10 @@
 using AmongUs.GameOptions;
-using TOHE.Roles.Core;
+using NEZZ.Roles.Core;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles._Ghosts_.Impostor;
+namespace NEZZ.Roles._Ghosts_.Impostor;
 
 internal class Possessor : RoleBase
 {

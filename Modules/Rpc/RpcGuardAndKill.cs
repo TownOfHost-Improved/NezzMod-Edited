@@ -2,7 +2,7 @@ using AmongUs.GameOptions;
 using AmongUs.InnerNet.GameDataMessages;
 using Hazel;
 
-namespace TOHE.Modules.Rpc
+namespace NEZZ.Modules.Rpc
 {
     public class RpcGuardAndKill : CustomModdedData
     {

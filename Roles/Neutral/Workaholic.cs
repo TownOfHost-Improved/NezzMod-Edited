@@ -1,10 +1,10 @@
 using AmongUs.GameOptions;
-using static TOHE.MeetingHudStartPatch;
-using static TOHE.Options;
-using static TOHE.Translator;
+using static NEZZ.MeetingHudStartPatch;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
 //Thanks TOH_Y
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Workaholic : RoleBase
 {

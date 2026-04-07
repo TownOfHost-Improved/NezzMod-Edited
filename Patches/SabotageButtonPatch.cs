@@ -1,4 +1,4 @@
-namespace TOHE.Patches;
+namespace NEZZ.Patches;
 
 // https://github.com/tukasa0001/TownOfHost/blob/main/Patches/ActionButtonPatch.cs
 

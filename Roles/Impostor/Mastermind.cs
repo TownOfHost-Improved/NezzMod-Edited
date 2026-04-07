@@ -1,11 +1,11 @@
-using TOHE.Modules;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.Crewmate;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using NEZZ.Modules;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.Crewmate;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Mastermind : RoleBase
 {

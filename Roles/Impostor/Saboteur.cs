@@ -1,6 +1,6 @@
-using static TOHE.Utils;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Saboteur : RoleBase
 {

@@ -3,11 +3,11 @@ using AmongUs.InnerNet.GameDataMessages;
 using Hazel;
 using System;
 using System.Runtime.CompilerServices;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Core;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Core;
 
-namespace TOHE;
+namespace NEZZ;
 
 public static class AntiBlackout
 {

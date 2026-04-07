@@ -1,8 +1,8 @@
 using AmongUs.GameOptions;
-using static TOHE.Options;
-using static TOHE.Translator;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Terrorist : RoleBase
 {

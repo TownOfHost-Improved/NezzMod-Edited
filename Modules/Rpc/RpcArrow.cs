@@ -1,7 +1,7 @@
 using Hazel;
 using UnityEngine;
 
-namespace TOHE.Modules.Rpc
+namespace NEZZ.Modules.Rpc
 {
     class RpcArrow : BaseModdedRpc
     {

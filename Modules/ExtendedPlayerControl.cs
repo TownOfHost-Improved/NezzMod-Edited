@@ -8,20 +8,20 @@ using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
 using System.Text;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
-using TOHE.Patches;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.AddOns.Impostor;
-using TOHE.Roles.Core;
-using TOHE.Roles.Coven;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Impostor;
-using TOHE.Roles.Neutral;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
+using NEZZ.Patches;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.AddOns.Impostor;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Coven;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Impostor;
+using NEZZ.Roles.Neutral;
 using UnityEngine;
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE;
+namespace NEZZ;
 
 static class ExtendedPlayerControl
 {

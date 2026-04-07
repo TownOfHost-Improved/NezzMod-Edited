@@ -5,16 +5,16 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE;
+namespace NEZZ;
 
 public static class TemplateManager
 {
 #if ANDROID
-    private static readonly string TEMPLATE_FILE_PATH = Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "template.txt");
+    private static readonly string TEMPLATE_FILE_PATH = Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "template.txt");
 #else
-    private static readonly string TEMPLATE_FILE_PATH = "./TOHE-DATA/template.txt";
+    private static readonly string TEMPLATE_FILE_PATH = "./NEZZ-DATA/template.txt";
 #endif
 
     private static readonly Dictionary<string, Func<string>> _replaceDictionaryNormalOptions = new()
@@ -113,15 +113,15 @@ public static class TemplateManager
             else fileName = "English";
 
 #if ANDROID
-            string dataDirectory = Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA");
-            string defaultTemplatePath = Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "Default_Teamplate.txt");
+            string dataDirectory = Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA");
+            string defaultTemplatePath = Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "Default_Teamplate.txt");
 #else
-        string dataDirectory = @"TOHE-DATA";
-        string defaultTemplatePath = @"./TOHE-DATA/Default_Teamplate.txt";
+        string dataDirectory = @"NEZZ-DATA";
+        string defaultTemplatePath = @"./NEZZ-DATA/Default_Teamplate.txt";
 #endif
 
             if (!Directory.Exists(dataDirectory)) Directory.CreateDirectory(dataDirectory);
-            var defaultTemplateMsg = GetResourcesTxt($"TOHE.Resources.Config.template.{fileName}.txt");
+            var defaultTemplateMsg = GetResourcesTxt($"NEZZ.Resources.Config.template.{fileName}.txt");
 
             if (!File.Exists(defaultTemplatePath))
             {

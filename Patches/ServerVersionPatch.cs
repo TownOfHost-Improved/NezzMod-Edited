@@ -1,4 +1,4 @@
-namespace TOHE.Patches;
+namespace NEZZ.Patches;
 
 [HarmonyPatch(typeof(Constants), nameof(Constants.GetBroadcastVersion))]
 class ServerUpdatePatch

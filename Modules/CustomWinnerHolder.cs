@@ -1,6 +1,6 @@
 using Hazel;
 
-namespace TOHE;
+namespace NEZZ;
 
 public static class CustomWinnerHolder
 {

@@ -1,10 +1,10 @@
-using TOHE.Roles.Core;
-using TOHE.Roles.Crewmate;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Crewmate;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Utils;
+using static NEZZ.Options;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Randomizer : RoleBase
 {
@@ -328,7 +328,7 @@ internal class Randomizer : RoleBase
         if (!GhostRolesList.Any())
         {
             Logger.Warn("No ghost roles available. Defaulting to a fallback role.", "Randomizer");
-            return CustomRoles.CrewmateTOHE; // Default fallback if the list is empty
+            return CustomRoles.CrewmateNEZZ; // Default fallback if the list is empty
         }
 
         // Select a random ghost role
@@ -340,7 +340,7 @@ internal class Randomizer : RoleBase
     private static CustomRoles GetRandomRoleAcrossAllTeams(byte playerId)
     {
         var pc = GetPlayerById(playerId);
-        if (pc == null) return CustomRoles.CrewmateTOHE; // Default fallback
+        if (pc == null) return CustomRoles.CrewmateNEZZ; // Default fallback
 
         var playerState = Main.PlayerStates[playerId];
 
@@ -363,7 +363,7 @@ internal class Randomizer : RoleBase
         if (!availableRoles.Any())
         {
             Logger.Error("Available roles list is empty for the determined team. Defaulting to Crewmate.", "Randomizer");
-            return CustomRoles.CrewmateTOHE; // Fallback role
+            return CustomRoles.CrewmateNEZZ; // Fallback role
         }
 
         // Select a random role from the available roles
@@ -529,7 +529,7 @@ internal class Randomizer : RoleBase
             else
             {
                 Logger.Warn($"Randomizer {pc.name} could not be assigned a role. Defaulting to Crewmate.", "Randomizer");
-                newRole = CustomRoles.CrewmateTOHE; // Fallback in case of unexpected condition
+                newRole = CustomRoles.CrewmateNEZZ; // Fallback in case of unexpected condition
             }
 
             Logger.Info($"Assigning role {newRole} to player {pc.name}", "Randomizer");

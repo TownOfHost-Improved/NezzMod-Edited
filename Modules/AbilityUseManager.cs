@@ -1,7 +1,7 @@
 using System;
-using TOHE.Modules.Rpc;
+using NEZZ.Modules.Rpc;
 
-namespace TOHE.Modules;
+namespace NEZZ.Modules;
 
 public static class AbilityUseManager
 {

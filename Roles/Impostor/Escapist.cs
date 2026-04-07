@@ -1,10 +1,10 @@
 using AmongUs.GameOptions;
-using TOHE.Modules;
+using NEZZ.Modules;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Escapist : RoleBase
 {

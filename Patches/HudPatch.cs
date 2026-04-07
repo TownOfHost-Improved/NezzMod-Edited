@@ -1,11 +1,11 @@
 using System.Text;
 using TMPro;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.Core;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.Core;
 using UnityEngine;
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE;
+namespace NEZZ;
 
 [HarmonyPatch(typeof(HudManager), nameof(HudManager.Start))]
 class HudManagerStartPatch

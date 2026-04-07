@@ -1,4 +1,4 @@
-namespace TOHE.Modules;
+namespace NEZZ.Modules;
 
 public static class DoorsReset
 {

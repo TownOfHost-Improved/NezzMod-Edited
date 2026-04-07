@@ -1,6 +1,6 @@
 using Hazel;
 
-namespace TOHE.Modules.Rpc
+namespace NEZZ.Modules.Rpc
 {
     class RpcShowPopUp : BaseModdedRpc
     {

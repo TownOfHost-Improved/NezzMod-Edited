@@ -1,10 +1,10 @@
 #Number:100012
 #Title:TownOfHostEdited v2.0.0
 #SubTitle:★★★★安卓没了呜呜呜呜★★★★
-#ShortTitle:★TOHE v2.0.0
+#ShortTitle:★NEZZ v2.0.0
 #Date:2023-2-21T00:00:00Z
 #-----------------------------
-感谢您对TOHE的支持！！！
+感谢您对NEZZ的支持！！！
 
 ## 对应官方版本
 - 基于官方版本 v4.1.0

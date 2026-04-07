@@ -1,8 +1,8 @@
 using AmongUs.GameOptions;
 using System;
-using static TOHE.Options;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Juggernaut : RoleBase
 {

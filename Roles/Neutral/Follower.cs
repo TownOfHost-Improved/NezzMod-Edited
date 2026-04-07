@@ -1,13 +1,13 @@
 using Hazel;
 using Il2CppSystem;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Follower : RoleBase
 {

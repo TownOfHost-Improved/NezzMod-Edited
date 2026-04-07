@@ -5,18 +5,18 @@ using System.Text.RegularExpressions;
 using AmongUs.GameOptions;
 using Cpp2IL.Core.Extensions;
 using Rewired;
-using TOHE.Modules;
-using TOHE.Patches;
-using TOHE.Roles.Core.AssignManager;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Double;
-using TOHE.Roles.Impostor;
-using TOHE.Roles.Neutral;
-using TOHE.Roles.Vanilla;
+using NEZZ.Modules;
+using NEZZ.Patches;
+using NEZZ.Roles.Core.AssignManager;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Double;
+using NEZZ.Roles.Impostor;
+using NEZZ.Roles.Neutral;
+using NEZZ.Roles.Vanilla;
 
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Core.DraftAssign;
+namespace NEZZ.Roles.Core.DraftAssign;
 
 public static class DraftAssign
 {
@@ -60,7 +60,7 @@ public static class DraftAssign
                 case CustomRoles.NiceMini:
                 case CustomRoles.EvilMini:
                 case CustomRoles.Runner:
-                case CustomRoles.PhantomTOHE when NarcManager.IsNarcAssigned():
+                case CustomRoles.PhantomNEZZ when NarcManager.IsNarcAssigned():
                     continue;
             }
 
@@ -535,9 +535,9 @@ public static class DraftAssign
     }
 
 #if !ANDROID
-    private const string ROLEDECK_FOLDER_NAME = "TOHE-DATA/RoleDecks";
+    private const string ROLEDECK_FOLDER_NAME = "NEZZ-DATA/RoleDecks";
 #else
-    private static readonly string ROLEDECK_FOLDER_NAME = Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "RoleDecks");
+    private static readonly string ROLEDECK_FOLDER_NAME = Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "RoleDecks");
 #endif
     public static void LoadRoleDecks()
     {
@@ -656,7 +656,7 @@ public static class DraftAssign
 
             while (playerCount > UnassignedSlots.Count)
             {
-                UnassignedSlots.Add(new([], [CustomRoles.CrewmateTOHE]));
+                UnassignedSlots.Add(new([], [CustomRoles.CrewmateNEZZ]));
             }
         }
 
@@ -763,19 +763,19 @@ public static class DraftAssign
             {
                 List<CustomRoles> pool = [.. PoolLookup[playerId].Shuffle(rd)];
 
-                RoleResult[playerId] = pool.FirstOrDefault(CustomRoles.CrewmateTOHE);
+                RoleResult[playerId] = pool.FirstOrDefault(CustomRoles.CrewmateNEZZ);
             }
             // Assign role if draft bucket not assigned
             // else if (UnassignedDraftPools.Any())
             // {
-            //     var role = UnassignedDraftPools.Shuffle(rd).First().Value.Shuffle(rd).FirstOrDefault(CustomRoles.CrewmateTOHE);
+            //     var role = UnassignedDraftPools.Shuffle(rd).First().Value.Shuffle(rd).FirstOrDefault(CustomRoles.CrewmateNEZZ);
 
             //     RoleResult[playerId] = role;
             // }
             // Assign crewmate if no unassigned roles left
             else
             {
-                RoleResult[playerId] = CustomRoles.CrewmateTOHE;
+                RoleResult[playerId] = CustomRoles.CrewmateNEZZ;
             }
         }
 

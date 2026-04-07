@@ -1,5 +1,5 @@
 
-namespace TOHE.Modules;
+namespace NEZZ.Modules;
 
 public class BAUPlayersData
 {

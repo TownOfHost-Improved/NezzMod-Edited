@@ -1,6 +1,6 @@
 using Hazel;
 
-namespace TOHE.Modules.Rpc
+namespace NEZZ.Modules.Rpc
 {
     public class RpcSyncAllPlayerNames : BaseModdedRpc
     {

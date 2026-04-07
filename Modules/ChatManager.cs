@@ -2,13 +2,13 @@ using Hazel;
 using System;
 using System.Security.Cryptography;
 using System.Text;
-using TOHE.Modules.Rpc;
-using TOHE.Patches;
-using TOHE.Roles.Impostor;
-using static TOHE.Options;
-using static TOHE.Translator;
+using NEZZ.Modules.Rpc;
+using NEZZ.Patches;
+using NEZZ.Roles.Impostor;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Modules.ChatManager
+namespace NEZZ.Modules.ChatManager
 {
     public class ChatManager
     {

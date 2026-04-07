@@ -1,12 +1,12 @@
 using Hazel;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Coven;
-using TOHE.Roles.Neutral;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Coven;
+using NEZZ.Roles.Neutral;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Crewmate;
+namespace NEZZ.Roles.Crewmate;
 
 internal class Snitch : RoleBase
 {

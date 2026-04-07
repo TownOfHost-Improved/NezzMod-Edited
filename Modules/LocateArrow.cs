@@ -1,9 +1,9 @@
 using Hazel;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
 using UnityEngine;
 
-namespace TOHE;
+namespace NEZZ;
 
 static class LocateArrow
 {

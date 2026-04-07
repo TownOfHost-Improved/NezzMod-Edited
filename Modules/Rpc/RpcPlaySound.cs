@@ -1,4 +1,4 @@
-namespace TOHE.Modules.Rpc
+namespace NEZZ.Modules.Rpc
 {
     class RpcPlaySound : BaseModdedRpc
     {

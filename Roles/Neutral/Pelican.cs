@@ -1,17 +1,17 @@
 using AmongUs.GameOptions;
 using Hazel;
 using System.Text;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Core;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Double;
-using TOHE.Roles.Impostor;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Double;
+using NEZZ.Roles.Impostor;
 using UnityEngine;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Pelican : RoleBase
 {

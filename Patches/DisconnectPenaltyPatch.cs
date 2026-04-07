@@ -1,6 +1,6 @@
 using AmongUs.Data.Player;
 
-namespace TOHE.Patches
+namespace NEZZ.Patches
 {
     [HarmonyPatch(typeof(PlayerBanData), nameof(PlayerBanData.IsBanned), MethodType.Getter)]
     public static class DisconnectPenaltyPatch

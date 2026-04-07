@@ -1,7 +1,7 @@
-using TOHE.Modules.Rpc;
+using NEZZ.Modules.Rpc;
 using UnityEngine;
 
-namespace TOHE.Patches;
+namespace NEZZ.Patches;
 
 [HarmonyPatch(typeof(NotificationPopper), nameof(NotificationPopper.Awake))]
 public class NotificationPopperAwakePatch

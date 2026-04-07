@@ -1,8 +1,8 @@
 using AmongUs.Data;
-using TOHE.Modules;
-using TOHE.Roles.Impostor;
+using NEZZ.Modules;
+using NEZZ.Roles.Impostor;
 
-namespace TOHE;
+namespace NEZZ;
 
 static class PlayerOutfitExtension
 {

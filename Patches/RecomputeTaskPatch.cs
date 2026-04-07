@@ -1,4 +1,4 @@
-namespace TOHE;
+namespace NEZZ;
 
 [HarmonyPatch(typeof(GameData), nameof(GameData.RecomputeTaskCounts))]
 class CustomTaskCountsPatch

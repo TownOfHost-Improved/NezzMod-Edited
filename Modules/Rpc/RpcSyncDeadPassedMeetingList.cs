@@ -1,6 +1,6 @@
 using Hazel;
-using TOHE;
-using TOHE.Modules.Rpc;
+using NEZZ;
+using NEZZ.Modules.Rpc;
 
 class RpcSyncDeadPassedMeetingList : BaseModdedRpc
 {

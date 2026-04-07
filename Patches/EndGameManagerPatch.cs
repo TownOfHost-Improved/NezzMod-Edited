@@ -1,10 +1,10 @@
 using InnerNet;
 using TMPro;
-using TOHE.Roles.Core.DraftAssign;
+using NEZZ.Roles.Core.DraftAssign;
 using UnityEngine;
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE.Patches;
+namespace NEZZ.Patches;
 
 [HarmonyPatch(typeof(EndGameManager), nameof(EndGameManager.ShowButtons))]
 public class EndGameManagerPatch

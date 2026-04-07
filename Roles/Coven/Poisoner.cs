@@ -1,9 +1,9 @@
-using TOHE.Roles.AddOns.Common;
+using NEZZ.Roles.AddOns.Common;
 using UnityEngine;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Coven;
+namespace NEZZ.Roles.Coven;
 
 internal class Poisoner : CovenManager
 {

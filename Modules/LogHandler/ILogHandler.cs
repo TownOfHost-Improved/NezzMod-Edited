@@ -1,6 +1,6 @@
 using System;
 
-namespace TOHE.Modules;
+namespace NEZZ.Modules;
 
 public interface ILogHandler
 {

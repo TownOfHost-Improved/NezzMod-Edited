@@ -1,10 +1,10 @@
 using AmongUs.GameOptions;
-using TOHE.Roles.Core.AssignManager;
-using TOHE.Roles.Crewmate;
-using static TOHE.Options;
-using static TOHE.Translator;
+using NEZZ.Roles.Core.AssignManager;
+using NEZZ.Roles.Crewmate;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE;
+namespace NEZZ;
 
 public static class NarcManager
 {
@@ -71,7 +71,7 @@ public static class NarcManager
             {
                 if (RoleAssign.SetRoles.ContainsValue(improle)) continue;
                 //if (improle.IsMadmate() && !MadmateCanBeNarc.GetBool()) continue;
-                if (improle is CustomRoles.PhantomTOHE) continue;
+                if (improle is CustomRoles.PhantomNEZZ) continue;
                 RolesToSelect.Add(improle);
             }
 

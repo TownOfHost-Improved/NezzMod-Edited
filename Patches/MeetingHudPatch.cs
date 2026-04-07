@@ -3,21 +3,21 @@ using Hazel;
 using System;
 using System.Text;
 using TMPro;
-using TOHE.Modules;
-using TOHE.Patches;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.AddOns.Crewmate;
-using TOHE.Roles.AddOns.Impostor;
-using TOHE.Roles.Core;
-using TOHE.Roles.Coven;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Impostor;
-using TOHE.Roles.Neutral;
+using NEZZ.Modules;
+using NEZZ.Patches;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.AddOns.Crewmate;
+using NEZZ.Roles.AddOns.Impostor;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Coven;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Impostor;
+using NEZZ.Roles.Neutral;
 using UnityEngine;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE;
+namespace NEZZ;
 
 [HarmonyPatch(typeof(MeetingHud), nameof(MeetingHud.CheckForEndVoting))]
 class CheckForEndVotingPatch

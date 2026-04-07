@@ -1,6 +1,6 @@
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Crewmate;
+namespace NEZZ.Roles.Crewmate;
 
 internal class GuessMaster : RoleBase
 {

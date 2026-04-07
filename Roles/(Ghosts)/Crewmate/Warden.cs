@@ -1,11 +1,11 @@
 using AmongUs.GameOptions;
-using TOHE.Modules;
-using TOHE.Roles.Core;
+using NEZZ.Modules;
+using NEZZ.Roles.Core;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles._Ghosts_.Crewmate;
+namespace NEZZ.Roles._Ghosts_.Crewmate;
 
 internal class Warden : RoleBase
 {

@@ -1,12 +1,12 @@
 using Hazel;
 using System.Text;
-using TOHE.Modules.Rpc;
+using NEZZ.Modules.Rpc;
 using UnityEngine;
-using static TOHE.Options;
-using static TOHE.Translator;
-using static TOHE.Utils;
+using static NEZZ.Options;
+using static NEZZ.Translator;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Coven;
+namespace NEZZ.Roles.Coven;
 
 internal class PotionMaster : CovenManager
 {

@@ -1,11 +1,11 @@
 using AmongUs.Data;
 
-namespace TOHE;
+namespace NEZZ;
 
 // 参考：https://github.com/ykundesu/SuperNewRoles/blob/master/SuperNewRoles/Patches/SNROnlySearch.cs
-public static class TOHEOnlySearch
+public static class NEZZOnlySearch
 {
-    public const string FilterText = "TOHE";
+    public const string FilterText = "NEZZ";
     [HarmonyPatch(typeof(FilterTagManager), nameof(FilterTagManager.RefreshTags))]
     public static class FilterTagManagerPatch
     {

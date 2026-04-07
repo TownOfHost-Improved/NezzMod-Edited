@@ -7,21 +7,21 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
-using TOHE.Modules;
-using TOHE.Modules.ChatManager;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.Core;
-using TOHE.Roles.Core.AssignManager;
-using TOHE.Roles.Core.DraftAssign;
-using TOHE.Roles.Coven;
-using TOHE.Roles.Crewmate;
-using TOHE.Roles.Impostor;
-using TOHE.Roles.Neutral;
+using NEZZ.Modules;
+using NEZZ.Modules.ChatManager;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Core.AssignManager;
+using NEZZ.Roles.Core.DraftAssign;
+using NEZZ.Roles.Coven;
+using NEZZ.Roles.Crewmate;
+using NEZZ.Roles.Impostor;
+using NEZZ.Roles.Neutral;
 using UnityEngine;
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
 
-namespace TOHE.Patches;
+namespace NEZZ.Patches;
 
 internal class Command(string commandKey, string arguments, string description, Command.UsageLevels usageLevel, Command.UsageTimes usageTime, Action<PlayerControl, string, string, string[]> action, bool isCanceled, bool alwaysHidden, string[] argsDescriptions = null, CustomRoles[] requiredRole = null)
 {
@@ -188,7 +188,7 @@ internal class Command(string commandKey, string arguments, string description, 
             }
     }
 
-    public string ToHelpString()
+    public string NEZZlpString()
     {
         var names = GetString(CommandKey).Split("|");
         return $"\n  ○ /{names[0]} {Description}";
@@ -215,15 +215,15 @@ internal class Command(string commandKey, string arguments, string description, 
 internal class ChatCommands
 {
 #if !ANDROID
-    private static readonly string modLogFiles = @"./TOHE-DATA/ModLogs.txt";
-    private static readonly string modTagsFiles = @"./TOHE-DATA/Tags/MOD_TAGS";
-    private static readonly string sponsorTagsFiles = @"./TOHE-DATA/Tags/SPONSOR_TAGS";
-    private static readonly string vipTagsFiles = @"./TOHE-DATA/Tags/VIP_TAGS";
+    private static readonly string modLogFiles = @"./NEZZ-DATA/ModLogs.txt";
+    private static readonly string modTagsFiles = @"./NEZZ-DATA/Tags/MOD_TAGS";
+    private static readonly string sponsorTagsFiles = @"./NEZZ-DATA/Tags/SPONSOR_TAGS";
+    private static readonly string vipTagsFiles = @"./NEZZ-DATA/Tags/VIP_TAGS";
 #else
-    private static readonly string modLogFiles = Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "ModLogs.txt");
-    private static readonly string modTagsFiles = Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "MOD_TAGS");
-    private static readonly string sponsorTagsFiles = Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "SPONSOR_TAGS");
-    private static readonly string vipTagsFiles = Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "VIP_TAGS");
+    private static readonly string modLogFiles = Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "ModLogs.txt");
+    private static readonly string modTagsFiles = Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "MOD_TAGS");
+    private static readonly string sponsorTagsFiles = Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "SPONSOR_TAGS");
+    private static readonly string vipTagsFiles = Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "VIP_TAGS");
 #endif
 
     private static readonly Dictionary<char, int> Pollvotes = [];
@@ -706,8 +706,8 @@ internal class ChatCommands
             {
                 CustomRoles setrole = result.GetCustomRoleTeam() switch
                 {
-                    Custom_Team.Impostor => CustomRoles.ImpostorTOHE,
-                    _ => CustomRoles.CrewmateTOHE
+                    Custom_Team.Impostor => CustomRoles.ImpostorNEZZ,
+                    _ => CustomRoles.CrewmateNEZZ
 
                 };
                 RoleAssign.SetRoles[pid] = setrole;
@@ -2657,7 +2657,7 @@ internal class UpdateCharCountPatch
     public static void Postfix(FreeChatInputField __instance)
     {
         int length = __instance.textArea.text.Length;
-        __instance.charCountText.SetText(length <= 0 ? GetString("ThankYouForUsingTOHE") : $"{length}/{__instance.textArea.characterLimit}");
+        __instance.charCountText.SetText(length <= 0 ? GetString("ThankYouForUsingNEZZ") : $"{length}/{__instance.textArea.characterLimit}");
         __instance.charCountText.enableWordWrapping = false;
         if (length < (AmongUsClient.Instance.AmHost ? 888 : 444))
             __instance.charCountText.color = Color.black;

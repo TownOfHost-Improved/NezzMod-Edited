@@ -2,12 +2,12 @@ using AmongUs.GameOptions;
 using Hazel;
 using System;
 using System.Text;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.Core;
-using static TOHE.Options;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.Core;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Wildling : RoleBase
 {

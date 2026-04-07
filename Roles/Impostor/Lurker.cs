@@ -1,6 +1,6 @@
-using static TOHE.Options;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.Impostor;
+namespace NEZZ.Roles.Impostor;
 
 internal class Lurker : RoleBase
 {

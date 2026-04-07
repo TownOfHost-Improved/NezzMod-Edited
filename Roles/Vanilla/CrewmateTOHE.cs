@@ -1,10 +1,10 @@
 
-namespace TOHE.Roles.Vanilla;
+namespace NEZZ.Roles.Vanilla;
 
-internal class CrewmateTOHE : RoleBase
+internal class CrewmateNEZZ : RoleBase
 {
     //===========================SETUP================================\\
-    public override CustomRoles Role => CustomRoles.CrewmateTOHE;
+    public override CustomRoles Role => CustomRoles.CrewmateNEZZ;
     private const int Id = 6000;
 
     public override CustomRoles ThisRoleBase => CustomRoles.Crewmate;
@@ -13,6 +13,6 @@ internal class CrewmateTOHE : RoleBase
 
     public override void SetupCustomOption()
     {
-        Options.SetupRoleOptions(Id, TabGroup.CrewmateRoles, CustomRoles.CrewmateTOHE);
+        Options.SetupRoleOptions(Id, TabGroup.CrewmateRoles, CustomRoles.CrewmateNEZZ);
     }
 }

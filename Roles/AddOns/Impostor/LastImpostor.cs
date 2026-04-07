@@ -1,6 +1,6 @@
-using TOHE.Roles.Core;
+using NEZZ.Roles.Core;
 
-namespace TOHE.Roles.AddOns.Impostor;
+namespace NEZZ.Roles.AddOns.Impostor;
 
 public class LastImpostor : IAddon
 {

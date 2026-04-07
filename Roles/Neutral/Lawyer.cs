@@ -1,13 +1,13 @@
 using AmongUs.GameOptions;
 using Hazel;
-using TOHE.Modules.Rpc;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.Core;
-using static TOHE.Options;
-using static TOHE.Translator;
+using NEZZ.Modules.Rpc;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.Core;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
 
-namespace TOHE.Roles.Neutral;
+namespace NEZZ.Roles.Neutral;
 
 internal class Lawyer : RoleBase
 {
@@ -37,7 +37,7 @@ internal class Lawyer : RoleBase
     public static readonly List<string> ChangeRoles = new List<string>();
     public static readonly CustomRoles[] CRoleChangeRoles =
     [
-        CustomRoles.CrewmateTOHE,
+        CustomRoles.CrewmateNEZZ,
         CustomRoles.Amnesiac,
         CustomRoles.Jester,
         CustomRoles.Opportunist,
@@ -48,7 +48,7 @@ internal class Lawyer : RoleBase
         CustomRoles.Doctor,
         CustomRoles.Maverick,
         CustomRoles.Follower,
-        CustomRoles.TrackerTOHE,
+        CustomRoles.TrackerNEZZ,
         CustomRoles.Mechanic,
         CustomRoles.Refugee,
         CustomRoles.Sheriff,

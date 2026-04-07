@@ -1,8 +1,8 @@
-using TOHE.Roles.AddOns;
-using static TOHE.Options;
-using static TOHE.Translator;
+using NEZZ.Roles.AddOns;
+using static NEZZ.Options;
+using static NEZZ.Translator;
 
-namespace TOHE.Roles.Crewmate;
+namespace NEZZ.Roles.Crewmate;
 
 internal class Merchant : RoleBase
 {

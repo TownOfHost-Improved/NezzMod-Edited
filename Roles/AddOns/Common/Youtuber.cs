@@ -1,7 +1,7 @@
-using TOHE.Modules;
-using static TOHE.Options;
+using NEZZ.Modules;
+using static NEZZ.Options;
 
-namespace TOHE.Roles.AddOns.Common;
+namespace NEZZ.Roles.AddOns.Common;
 
 public class Youtuber : IAddon
 {

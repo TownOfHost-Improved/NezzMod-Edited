@@ -1,8 +1,8 @@
-using TOHE.Modules;
-using static TOHE.Options;
-using static TOHE.Utils;
+using NEZZ.Modules;
+using static NEZZ.Options;
+using static NEZZ.Utils;
 
-namespace TOHE.Roles.Crewmate;
+namespace NEZZ.Roles.Crewmate;
 
 internal class Transporter : RoleBase
 {

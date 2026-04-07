@@ -1,7 +1,7 @@
 using Hazel;
 using InnerNet;
 
-namespace TOHE.Modules.Rpc
+namespace NEZZ.Modules.Rpc
 {
     class RpcGuessKill : BaseModdedRpc
     {

@@ -5,18 +5,18 @@ using Hazel;
 using InnerNet;
 using System;
 using System.Text;
-using TOHE.Modules;
-using TOHE.Modules.ChatManager;
-using TOHE.Modules.Rpc;
-using TOHE.Patches;
-using TOHE.Roles.Core;
-using TOHE.Roles.Core.AssignManager;
-using TOHE.Roles.Core.DraftAssign;
-using TOHE.Roles.Crewmate;
+using NEZZ.Modules;
+using NEZZ.Modules.ChatManager;
+using NEZZ.Modules.Rpc;
+using NEZZ.Patches;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Core.AssignManager;
+using NEZZ.Roles.Core.DraftAssign;
+using NEZZ.Roles.Crewmate;
 using UnityEngine;
-using static TOHE.Translator;
+using static NEZZ.Translator;
 
-namespace TOHE;
+namespace NEZZ;
 
 [HarmonyPatch(typeof(AmongUsClient), nameof(AmongUsClient.CoStartGame))]
 internal class ChangeRoleSettings
@@ -714,7 +714,7 @@ public static class RpcSetRoleReplacer
                 foreach (var target in Main.EnumeratePlayerControls())
                 {
                     RoleTypes targetRoleType = RoleTypes.Crewmate;
-                    var targetCustomRole = RoleAssign.RoleResult.GetValueOrDefault(target.PlayerId, CustomRoles.CrewmateTOHE);
+                    var targetCustomRole = RoleAssign.RoleResult.GetValueOrDefault(target.PlayerId, CustomRoles.CrewmateNEZZ);
 
                     if (targetCustomRole.GetVNRole() is CustomRoles.Noisemaker)
                         targetRoleType = RoleTypes.Noisemaker;
@@ -743,7 +743,7 @@ public static class RpcSetRoleReplacer
                             continue;
                         }
 
-                        var targetCustomRole = RoleAssign.RoleResult.GetValueOrDefault(target.PlayerId, CustomRoles.CrewmateTOHE);
+                        var targetCustomRole = RoleAssign.RoleResult.GetValueOrDefault(target.PlayerId, CustomRoles.CrewmateNEZZ);
 
                         if (targetCustomRole.GetVNRole() is CustomRoles.Noisemaker)
                         {
@@ -769,7 +769,7 @@ public static class RpcSetRoleReplacer
                             continue;
                         }
 
-                        var targetCustomRole = RoleAssign.RoleResult.GetValueOrDefault(target.PlayerId, CustomRoles.CrewmateTOHE);
+                        var targetCustomRole = RoleAssign.RoleResult.GetValueOrDefault(target.PlayerId, CustomRoles.CrewmateNEZZ);
 
                         if (targetCustomRole.IsDesyncRole())
                         {

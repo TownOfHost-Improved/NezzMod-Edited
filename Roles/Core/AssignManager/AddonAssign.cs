@@ -1,8 +1,8 @@
 using System;
-using TOHE.Roles.AddOns.Common;
-using TOHE.Roles.AddOns.Impostor;
+using NEZZ.Roles.AddOns.Common;
+using NEZZ.Roles.AddOns.Impostor;
 
-namespace TOHE.Roles.Core.AssignManager;
+namespace NEZZ.Roles.Core.AssignManager;
 
 public static class AddonAssign
 {

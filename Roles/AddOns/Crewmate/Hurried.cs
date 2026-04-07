@@ -1,5 +1,5 @@
 
-namespace TOHE.Roles.AddOns.Crewmate;
+namespace NEZZ.Roles.AddOns.Crewmate;
 
 public class Hurried : IAddon
 {

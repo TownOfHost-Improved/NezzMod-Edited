@@ -12,20 +12,20 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
-using TOHE.Modules;
-using TOHE.Modules.Rpc;
-using TOHE.Patches;
-using TOHE.Patches.Crowded;
-using TOHE.Roles.AddOns;
-using TOHE.Roles.Core;
-using TOHE.Roles.Double;
-using TOHE.Roles.Neutral;
+using NEZZ.Modules;
+using NEZZ.Modules.Rpc;
+using NEZZ.Patches;
+using NEZZ.Patches.Crowded;
+using NEZZ.Roles.AddOns;
+using NEZZ.Roles.Core;
+using NEZZ.Roles.Double;
+using NEZZ.Roles.Neutral;
 using UnityEngine;
 
-[assembly: AssemblyFileVersion(TOHE.Main.PluginVersion)]
-[assembly: AssemblyInformationalVersion(TOHE.Main.PluginVersion)]
-[assembly: AssemblyVersion(TOHE.Main.PluginVersion)]
-namespace TOHE;
+[assembly: AssemblyFileVersion(NEZZ.Main.PluginVersion)]
+[assembly: AssemblyInformationalVersion(NEZZ.Main.PluginVersion)]
+[assembly: AssemblyVersion(NEZZ.Main.PluginVersion)]
+namespace NEZZ;
 
 [BepInPlugin(PluginGuid, "NME", PluginVersion)]
 [BepInIncompatibility("jp.ykundesu.supernewroles")]
@@ -57,8 +57,8 @@ public class Main : BasePlugin
 
     public const string PluginGuid = "com.nessmodedited";
     public const string PluginGuid4 = "90759289-1d0d-494b-b36c-839f93ae0df1"; // for matchmaking token
-    public const string PluginVersion = "2026.0407.011.00001"; // YEAR.MMDD.VERSION.CANARYDEV
-    public const string PluginDisplayVersion = "0.1.1 Alpha 1";
+    public const string PluginVersion = "2026.0407.011.1000"; // YEAR.MMDD.VERSION.CANARYDEV
+    public const string PluginDisplayVersion = "0.1.1";
     public static readonly List<(int year, int month, int day, int revision)> SupportedVersionAU =
     [
         (2025, 11, 18, 0) // 2025.11.18 & 17.1
@@ -165,7 +165,7 @@ public class Main : BasePlugin
     public static readonly Dictionary<byte, PlayerState.DeathReason> AfterMeetingDeathPlayers = [];
     public static readonly Dictionary<CustomRoles, string> roleColors = [];
 
-    public static readonly string LANGUAGE_FOLDER_NAME = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "TOHE-DATA", "Language") : "TOHE-DATA/Language";
+    public static readonly string LANGUAGE_FOLDER_NAME = OperatingSystem.IsAndroid() ? Path.Combine(UnityEngine.Application.persistentDataPath, "NEZZ-DATA", "Language") : "NEZZ-DATA/Language";
 
     public static readonly string DataPath = OperatingSystem.IsAndroid() ? Application.persistentDataPath : ".";
 
@@ -291,7 +291,7 @@ public class Main : BasePlugin
         string path = Path.Combine(LANGUAGE_FOLDER_NAME, filename);
         if (File.Exists(path))
         {
-            TOHE.Logger.Info($"Load custom Role Color file：{filename}", "LoadCustomRoleColor");
+            NEZZ.Logger.Info($"Load custom Role Color file：{filename}", "LoadCustomRoleColor");
             using StreamReader sr = new(path, Encoding.GetEncoding("UTF-8"));
             string text;
             string[] tmp = [];
@@ -309,19 +309,19 @@ public class Main : BasePlugin
                             {
                                 roleColors[role] = "#" + color;
                             }
-                            else TOHE.Logger.Error($"Invalid Hexcolor #{color}", "LoadCustomRoleColor");
+                            else NEZZ.Logger.Error($"Invalid Hexcolor #{color}", "LoadCustomRoleColor");
                         }
                     }
                     catch (KeyNotFoundException)
                     {
-                        TOHE.Logger.Warn($"Invalid Key：{tmp[0]}", "LoadCustomTranslation");
+                        NEZZ.Logger.Warn($"Invalid Key：{tmp[0]}", "LoadCustomTranslation");
                     }
                 }
             }
         }
         else
         {
-            TOHE.Logger.Error($"File not found：{filename}", "LoadCustomTranslation");
+            NEZZ.Logger.Error($"File not found：{filename}", "LoadCustomTranslation");
         }
     }
 
@@ -357,7 +357,7 @@ public class Main : BasePlugin
         {
             roleColors.Clear();
             var assembly = Assembly.GetExecutingAssembly();
-            string resourceName = "TOHE.Resources.roleColor.json";
+            string resourceName = "NEZZ.Resources.roleColor.json";
             using (Stream stream = assembly.GetManifestResourceStream(resourceName))
             {
                 if (stream != null)
@@ -375,13 +375,13 @@ public class Main : BasePlugin
                         else
                         {
                             // Handle invalid or unrecognized enum keys
-                            TOHE.Logger.Error($"Invalid enum key: {kvp.Key}", "Reading Role Colors");
+                            NEZZ.Logger.Error($"Invalid enum key: {kvp.Key}", "Reading Role Colors");
                         }
                     }
                 }
                 else
                 {
-                    TOHE.Logger.Error($"Embedded resource not found.", "Reading Role Colors");
+                    NEZZ.Logger.Error($"Embedded resource not found.", "Reading Role Colors");
                 }
             }
 
@@ -409,8 +409,8 @@ public class Main : BasePlugin
         }
         catch (ArgumentException ex)
         {
-            TOHE.Logger.Error("错误：字典出现重复项", "LoadDictionary");
-            TOHE.Logger.Exception(ex, "LoadDictionary");
+            NEZZ.Logger.Error("错误：字典出现重复项", "LoadDictionary");
+            NEZZ.Logger.Exception(ex, "LoadDictionary");
             hasArgumentException = true;
             ExceptionMessage = ex.Message;
             ExceptionMessageIsShown = false;
@@ -418,7 +418,7 @@ public class Main : BasePlugin
     }
     public static void LoadRoleClasses()
     {
-        TOHE.Logger.Info("Loading All RoleClasses...", "LoadRoleClasses");
+        NEZZ.Logger.Info("Loading All RoleClasses...", "LoadRoleClasses");
         try
         {
             var RoleTypes = Assembly.GetAssembly(typeof(RoleBase))!
@@ -443,7 +443,7 @@ public class Main : BasePlugin
                 CustomRoleManager.RoleClass.Add(role, (RoleBase)Activator.CreateInstance(roleType));
             }
 
-            TOHE.Logger.Info("RoleClasses Loaded Successfully", "LoadRoleClasses");
+            NEZZ.Logger.Info("RoleClasses Loaded Successfully", "LoadRoleClasses");
         }
         catch (Exception err)
         {
@@ -452,7 +452,7 @@ public class Main : BasePlugin
     }
     public static void LoadAddonClasses()
     {
-        TOHE.Logger.Info("Loading All AddonClasses...", "LoadAddonClasses");
+        NEZZ.Logger.Info("Loading All AddonClasses...", "LoadAddonClasses");
         try
         {
             var IAddonType = typeof(IAddon);
@@ -464,7 +464,7 @@ public class Main : BasePlugin
             .Where(x => x != null)
             .ToDictionary(x => x.Role, x => x));
 
-            TOHE.Logger.Info("AddonClasses Loaded Successfully", "LoadAddonClasses");
+            NEZZ.Logger.Info("AddonClasses Loaded Successfully", "LoadAddonClasses");
         }
         catch (Exception err)
         {
@@ -476,7 +476,7 @@ public class Main : BasePlugin
         string path = Path.Combine(LANGUAGE_FOLDER_NAME, "RoleColor.dat");
         if (File.Exists(path))
         {
-            TOHE.Logger.Info("Updating Custom Role Colors", "UpdateRoleColors");
+            NEZZ.Logger.Info("Updating Custom Role Colors", "UpdateRoleColors");
             try
             {
                 List<string> roleList = [];
@@ -509,7 +509,7 @@ public class Main : BasePlugin
             }
             catch (Exception e)
             {
-                TOHE.Logger.Error("An error occurred: " + e.Message, "UpdateRoleColors");
+                NEZZ.Logger.Error("An error occurred: " + e.Message, "UpdateRoleColors");
             }
         }
     }
@@ -533,7 +533,7 @@ public class Main : BasePlugin
             using var sha256 = SHA256.Create();
             var hashBytes = sha256.ComputeHash(stream);
             FileHash = BitConverter.ToString(hashBytes).Replace("-", "").ToLowerInvariant();
-            TOHE.Logger.Msg("Assembly Hash: " + FileHash, "Plugin Load");
+            NEZZ.Logger.Msg("Assembly Hash: " + FileHash, "Plugin Load");
         }
     }
 
@@ -575,39 +575,39 @@ public class Main : BasePlugin
             // Disable Horse Mode since it cause client crash
         }
 
-        Logger = BepInEx.Logging.Logger.CreateLogSource("TOHE");
+        Logger = BepInEx.Logging.Logger.CreateLogSource("NEZZ");
         coroutines = AddComponent<Coroutines>();
         dispatcher = AddComponent<Dispatcher>();
-        TOHE.Logger.Enable();
-        //TOHE.Logger.Disable("NotifyRoles");
-        TOHE.Logger.Disable("SwitchSystem");
-        TOHE.Logger.Disable("ModNews");
-        TOHE.Logger.Disable("RpcSetNamePrivate");
-        // TOHE.Logger.Disable("SendRPC");
-        TOHE.Logger.Disable("KnowRoleTarget");
+        NEZZ.Logger.Enable();
+        //NEZZ.Logger.Disable("NotifyRoles");
+        NEZZ.Logger.Disable("SwitchSystem");
+        NEZZ.Logger.Disable("ModNews");
+        NEZZ.Logger.Disable("RpcSetNamePrivate");
+        // NEZZ.Logger.Disable("SendRPC");
+        NEZZ.Logger.Disable("KnowRoleTarget");
         if (!DebugModeManager.AmDebugger)
         {
-            TOHE.Logger.Disable("2018k");
-            TOHE.Logger.Disable("Github");
-            //TOHE.Logger.Disable("ReceiveRPC");
-            TOHE.Logger.Disable("SetRole");
-            TOHE.Logger.Disable("Info.Role");
-            TOHE.Logger.Disable("TaskState.Init");
-            //TOHE.Logger.Disable("Vote");
-            //TOHE.Logger.Disable("SendChat");
-            TOHE.Logger.Disable("SetName");
-            //TOHE.Logger.Disable("AssignRoles");
-            //TOHE.Logger.Disable("RepairSystem");
-            //TOHE.Logger.Disable("MurderPlayer");
-            //TOHE.Logger.Disable("CheckMurder");
-            TOHE.Logger.Disable("PlayerControl.RpcSetRole");
-            TOHE.Logger.Disable("SyncCustomSettings");
-            TOHE.Logger.Disable("NR");
-            TOHE.Logger.Disable("RpcSetName");
-            TOHE.Logger.Disable("CustomRpcSender");
-            // TOHE.Logger.Disable("KnowRoleTarget");
+            NEZZ.Logger.Disable("2018k");
+            NEZZ.Logger.Disable("Github");
+            //NEZZ.Logger.Disable("ReceiveRPC");
+            NEZZ.Logger.Disable("SetRole");
+            NEZZ.Logger.Disable("Info.Role");
+            NEZZ.Logger.Disable("TaskState.Init");
+            //NEZZ.Logger.Disable("Vote");
+            //NEZZ.Logger.Disable("SendChat");
+            NEZZ.Logger.Disable("SetName");
+            //NEZZ.Logger.Disable("AssignRoles");
+            //NEZZ.Logger.Disable("RepairSystem");
+            //NEZZ.Logger.Disable("MurderPlayer");
+            //NEZZ.Logger.Disable("CheckMurder");
+            NEZZ.Logger.Disable("PlayerControl.RpcSetRole");
+            NEZZ.Logger.Disable("SyncCustomSettings");
+            NEZZ.Logger.Disable("NR");
+            NEZZ.Logger.Disable("RpcSetName");
+            NEZZ.Logger.Disable("CustomRpcSender");
+            // NEZZ.Logger.Disable("KnowRoleTarget");
         }
-        //TOHE.Logger.isDetail = true;
+        //NEZZ.Logger.isDetail = true;
 
         // 認証関連-初期化
         DebugKeyAuth = new HashAuth(DebugKeyHash, DebugKeySalt);
@@ -648,9 +648,9 @@ public class Main : BasePlugin
 
         IRandom.SetInstance(new NetRandomWrapper());
 
-        TOHE.Logger.Info($" {Application.version}", "Among Us Version");
+        NEZZ.Logger.Info($" {Application.version}", "Among Us Version");
 
-        var handler = TOHE.Logger.Handler("GitVersion");
+        var handler = NEZZ.Logger.Handler("GitVersion");
         handler.Info($"{nameof(ThisAssembly.Git.BaseTag)}: {ThisAssembly.Git.BaseTag}");
         handler.Info($"{nameof(ThisAssembly.Git.Commit)}: {ThisAssembly.Git.Commit}");
         handler.Info($"{nameof(ThisAssembly.Git.Commits)}: {ThisAssembly.Git.Commits}");
@@ -686,7 +686,7 @@ public class Main : BasePlugin
         }
 
         FileHash = "drafting_2025_09_09";
-        TOHE.Logger.Msg("========= TOHE loaded! =========", "Plugin Load");
+        NEZZ.Logger.Msg("========= NEZZ loaded! =========", "Plugin Load");
     }
 }
 [Obfuscation(Exclude = true)]
@@ -708,19 +708,19 @@ public enum CustomRoles
     Viper,
 
     // Crewmate Vanilla Remakes
-    CrewmateTOHE,
-    EngineerTOHE,
-    GuardianAngelTOHE,
-    NoisemakerTOHE,
-    ScientistTOHE,
-    TrackerTOHE,
-    DetectiveTOHE,
+    CrewmateNEZZ,
+    EngineerNEZZ,
+    GuardianAngelNEZZ,
+    NoisemakerNEZZ,
+    ScientistNEZZ,
+    TrackerNEZZ,
+    DetectiveNEZZ,
 
     // Impostor Vanilla Remakes
-    ImpostorTOHE,
-    PhantomTOHE,
-    ShapeshifterTOHE,
-    ViperTOHE,
+    ImpostorNEZZ,
+    PhantomNEZZ,
+    ShapeshifterNEZZ,
+    ViperNEZZ,
 
     // Impostor Ghost
     Bloodmoon,
@@ -1192,7 +1192,7 @@ public enum AdditionalWinners
 public enum SuffixModes
 {
     None = 0,
-    TOHE,
+    NEZZ,
     Streaming,
     Recording,
     RoomHost,

@@ -2,7 +2,7 @@
 #Number:100050
 #Title:TownOfHostEdited v2.4.2
 #SubTitle:★★★★Ooooh bigger update★★★★
-#ShortTitle:★TOHE v2.4.2
+#ShortTitle:★NEZZ v2.4.2
 #Date:2023-7-5T00:00:00Z
 #-----------------------------
 Added in some new stuff, along with some bug fixes.
