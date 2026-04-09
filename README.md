@@ -1,5 +1,5 @@
 
-<h1 align="center">Town of Host: Enhanced (TOHE)</h1>
+<h1 align="center">Nezz Mod Edited</h1>
 
 <br>
 
@@ -30,6 +30,10 @@
 <br>
 
 **Credit to these mods and their developers for the code and help:**
+### :star: [TOHEN](https://github.com/TheEnhancedNetwork/TownOfHost-Enhanced) 
+> 
+> - Town of Host: Enhanced was forked from Town of Host: Re-Edited.
+>
 ### :star: [TOHRE](https://github.com/Loonie-Toons/) 
 > 
 > - Town of Host: Enhanced was forked from Town of Host: Re-Edited.
@@ -122,20 +126,3 @@ This project utilizes a third-party API, custom-coded by The Enhanced Network. f
 ## Licensing Information
 
 This project is licensed under the GNU General Public License version 3.0. For more details, please refer to the [LICENSE](https://github.com/0xDrMoe/TownofHost-Enhanced/blob/main/LICENSE) file.
-
-### Third-Party API Access
-
-To obtain an API token for this project, you must join our Discord server and open a ticket. Follow the steps below:
-
-1. **Join our Discord Server:**
-   https://discord.gg/ten
-
-2. **Open a Ticket:**
-   Once you've joined the server, open a ticket and request an API token for TOHE API. Provide any necessary information as instructed in the ticket system.
-
-3. **Token Usage:**
-   Upon receiving the API token, follow the instructions in the documentation to configure and use the token with the project.
-
-**Note:** Access to the API is subject to our terms and conditions. Failure to comply with these terms may result in revocation of API access. Additionally, you only need a token if you are a developer. You do not need it to play the mod.
-
----
