@@ -30,9 +30,9 @@
 <br>
 
 **Credit to these mods and their developers for the code and help:**
-### :star: [TOHEN](https://github.com/TheEnhancedNetwork/TownOfHost-Enhanced) 
+### :star: [TOHEN](https://github.com/EnhancedNetwork/TownOfHost-Enhanced) 
 > 
-> - Town of Host: Enhanced was forked from Town of Host: Re-Edited.
+> - Nezz Mod-Edited was forked from Town of Host: Enhanced.
 >
 ### :star: [TOHRE](https://github.com/Loonie-Toons/) 
 > 
@@ -40,7 +40,7 @@
 >
 ### :star: [TOHE](https://github.com/KARPED1EM/TownOfHostEdited) :
 > 
-> - Town of Host: Re-Edited was forked from Town of Host: Edited. (TONX)
+> - Town of Host: Re-Edited was forked from Town of Host: Edited.
 > 
 ### :star: [TOH](https://github.com/tukasa0001/TownOfHost) :
 > 
