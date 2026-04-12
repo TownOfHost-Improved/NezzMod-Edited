@@ -35,6 +35,9 @@ internal class Santa : RoleBase
     {
         if (target.IsPlayerCrewmateTeam()) NiceList.Add(target);
         if (target.IsPlayerImpostorTeam()) NaughtyList.Add(target);
+        if (target.IsPlayerNeutralTeam()) NaughtyList.Add(target); 
+        if (target.IsPlayerCovenTeam()) NaughtyList.Add(target);
+        NaughtyList.Add(target);
         killer.RpcGuardAndKill();
         killer.ResetKillCooldown();
         return false;
