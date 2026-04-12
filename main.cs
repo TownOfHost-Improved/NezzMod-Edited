@@ -57,8 +57,8 @@ public class Main : BasePlugin
 
     public const string PluginGuid = "com.nessmodedited";
     public const string PluginGuid4 = "90759289-1d0d-494b-b36c-839f93ae0df1"; // for matchmaking token
-    public const string PluginVersion = "2026.0407.011.1000"; // YEAR.MMDD.VERSION.CANARYDEV
-    public const string PluginDisplayVersion = "0.1.1";
+    public const string PluginVersion = "2026.0412.012.0010"; // YEAR.MMDD.VERSION.CANARYDEV
+    public const string PluginDisplayVersion = "0.1.1 Beta 1";
     public static readonly List<(int year, int month, int day, int revision)> SupportedVersionAU =
     [
         (2025, 11, 18, 0) // 2025.11.18 & 17.1
