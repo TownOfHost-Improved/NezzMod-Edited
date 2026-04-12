@@ -1,9 +1,9 @@
 using AmongUs.GameOptions;
 using System.Collections.Generic;
 using UnityEngine;
-using static TOHO.Options;
+using static NEZZ.Options;
 
-namespace TOHO.Roles.Crewmate;
+namespace NEZZ.Roles.Crewmate;
 
 internal class Santa : RoleBase
 {
