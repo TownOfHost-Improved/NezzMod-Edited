@@ -872,6 +872,7 @@ public enum CustomRoles
     SpeedBooster,
     Spiritualist,
     Spy,
+    Santa,
     SuperStar,
     Swapper,
     TaskManager,
